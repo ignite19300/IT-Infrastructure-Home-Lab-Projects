@@ -8,11 +8,11 @@ This work supports my career transition goal into a structured IT Internship (Pr
 ## 1. Resilient Storage: ZFS High-Availability File Server
 This project focuses on building and managing a robust file server environment, ensuring data integrity and availability.
 
-Platform: Custom-built PC hardware running Proxmox (Debian Linux) as the core operating system and supervisor.
+Platform: Custom-built PC hardware running Proxmox (Debian Linux) as the core hypervisor/supervisor.
 
 Key Technology: Implementation and ongoing management of a ZFS (Zettabyte File System) pool.
 
-Functionality: The ZFS pool is configured for data redundancy (RAID-Z1) to protect against hardware failure.
+Functionality: The ZFS pool is configured for data redundancy (RAID-Z1) to protect against hardware failure and ensure rapid recovery.
 
 Access Layer: Configured Samba to enable secure file sharing across the network for Windows, Linux, and Mac clients.
 
@@ -23,22 +23,22 @@ To ensure safe testing and system maintenance, a dedicated virtualization platfo
 
 Objective: Create isolated, segmented environments for testing network configurations and running containerized services without impacting the production network.
 
-Platform: Running multiple Virtual Machines (VMs) and containers (vaultwarden, pihole, jellyfin, openwebui-ollama, pfsense, home assistant) for simulating different server roles (e.g., testing new configurations before deployment).
+Platform: Running multiple Virtual Machines (VMs) and containers (including Vaultwarden, Pi-hole, Jellyfin, OpenWebUI/Ollama, pfSense, and Home Assistant).
 
-Application Testing: Utilized the VMs to host various web applications in a controlled environment.
+Application Testing: Utilizing the hypervisor to host and manage diverse server roles, demonstrating resource management and deployment skills.
 
-Skills Demonstrated: Virtualization Management, Network Segmentation, System Testing, Resource Allocation, Environmental Isolation.
+Skills Demonstrated: Proxmox Virtualization Management, Containerization, Network Segmentation, System Testing, Resource Allocation.
 
 ## 3. Network & Perimeter Security Configuration
 This project involved manually configuring networking equipment and implementing security policies to manage internal and external traffic flow.
 
 Logical Structure: Designed and documented the subnet layout and IP addressing scheme of the home network.
 
-Firewall Rules: Implemented specific and restrictive firewall rules on the virtual router to segment traffic, block unauthorized external access, and manage access control lists (ACLs) for internal devices.
+Firewall Rules: Implemented specific and restrictive firewall rules on the virtual router (pfSense) to segment traffic, block unauthorized external access, and manage Access Control Lists (ACLs).
 
 Configuration: Managed and updated firmware and configurations for the primary network router and Wi-Fi access points.
 
-Skills Demonstrated: Network Administration, Firewall Policy Management, Network Security Principles, Router Configuration.
+Skills Demonstrated: Network Administration, pfSense Firewall Policy Management, Network Security Principles, Router Configuration.
 
 ## 4. Home Assistant (IoT) Integration & Automation
 A demonstration of integrating multiple systems and devices through a central platform, using API and scripting knowledge.
@@ -47,4 +47,4 @@ Platform: Home Assistant running on a dedicated machine for centralizing all sma
 
 Integration: Wrote configurations and scripts to integrate various devices, including cameras, audio equipment, and the home theater system.
 
-Skills Demonstrated: Systems Integration, API Interaction, YAML Configuration (or other scripting used), Troubleshooting Interoperability Issues.
+Skills Demonstrated: Systems Integration, API Interaction, YAML Configuration, Troubleshooting Int
